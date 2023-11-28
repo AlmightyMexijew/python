@@ -1,0 +1,19 @@
+Documentation for stcp1.py
+
+Goal: To practice the "simple tcp client" from Black Hat Python 2nd edition.
+Secondary Goal: To understand and expand on the client
+
+Explanation:
+While the intent and goal of the client is to demonstrate the ability to do what is necessary when necessary, the socket library/module can be clumsy and unwieldy.
+
+In my research on the topic, I have found that 'requests' seems to handle in a simpler way that doesn't require specific invocation of formatting, ports, or other things.
+
+How the script works:
+The script stcp1.py imports the necessary library/module and then assigns a target_host and target_port variable based on user input. The decision was made that this could save on editing regularly in favor of a dual assignment function that will allow most of the basic purpose to happen.
+
+The script uses an f-string to assemble the host with it's needed protocol. While this incarnation opts for 2 choices, it should still be possible to input other protocols and even sub-domains.
+
+The outcome is that the reply is received in all it's glorious mess.
+
+Future goal:
+script stcp1b.py that should incorporation subdomains and other pathing.
