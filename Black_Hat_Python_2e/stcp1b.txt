@@ -1,0 +1,17 @@
+Documentation for stcp1b.py
+
+Goal: To practice the "simple tcp client" from Black Hat Python 2nd edition.
+Secondary Goal: To understand and expand on the client
+
+Explanation:
+While the intent and goal of the client is to demonstrate the ability to do what is necessary when necessary, the socket library/module can be clumsy and unwieldy.
+
+In my research on the topic, I have found that 'requests' seems to handle in a simpler way that doesn't require specific invocation of formatting, ports, or other things.
+
+How the script works:
+The user is prompted for protocol, host, and subdomain. Once the pieces are assembled in an f-string, it sends the request out.
+
+The outcome is that the reply is received in all it's glorious mess. In this particular version a person can access more than websites, although they would need to include pathing or use an initial request to explore ftp availability and determine pathing.
+
+Future goal:
+N/A
